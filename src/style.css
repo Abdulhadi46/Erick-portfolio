@@ -29,6 +29,13 @@ nav {
   position: relative;
   top: -30px;
 }
+@media (max-width: 1024px) {
+  .ham-menu {
+    height: 30px;
+    width: 30px;
+    top: -20px;
+  }
+}
 .ham-menu span {
   height: 5px;
   width: 100%;
@@ -60,4 +67,15 @@ nav {
 .ham-menu.active span:nth-child(3) {
   top: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
+}
+#info {
+  position: relative;
+}
+#info ul::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  background-color: #ff972d;
+  top: 0px;
+  bottom: 0px;
 }
